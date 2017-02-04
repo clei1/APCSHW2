@@ -43,8 +43,16 @@ public class MatrixFinder{
 	    { 3,  7,  8 },
 	    { 6, 12, 15 },
 	};
+	int[][] orwell ={
+	    {5, 5, 5, 5},
+	    {5, 5, 5, 5},
+	    {5, 5, 5, 5},
+	    {5, 5, 5, 5},
+	};
 	System.out.println(searchMatrix(bey, 6));
 	System.out.println(searchMatrix(bey, 9));
 	//System.out.println(searchMatrix(bey, 15));
+	System.out.println(searchMatrix(orwell, 5));
+	System.out.println(searchMatrix(orwell, 9));
     }
 }
