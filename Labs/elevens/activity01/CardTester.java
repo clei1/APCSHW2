@@ -8,6 +8,17 @@ public class CardTester {
 	 *	@param args is not used.
 	 */
 	public static void main(String[] args) {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+	    Card test = new Card("A", "Giraffes", 2);
+	    System.out.println(test.suit());
+	    System.out.println(test.rank());
+	    System.out.println(test.pointValue());
+	    test = new Card("B", "Giraffes", 1);
+	    System.out.println(test.suit());
+	    System.out.println(test.rank());
+	    System.out.println(test.pointValue());
+	    Card test1 = new Card("B", "Giraffes", 1);
+	    System.out.println(test1.matches(test));
+	    test1 = new Card("B", "Lions", 1);
+	    System.out.println(test1.matches(test));
 	}
 }
