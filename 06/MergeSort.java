@@ -72,6 +72,13 @@ public class MergeSort {
 	}
     }//end sort()
 
+    //merge(sort(arr1), sort(arr2))
+    //merge(sort(merge(arr1.1), merge
+    // arr1 5
+    // arr1[0-2] arr1[3-5]
+
+    //merge(sort(arr[0-5]), sort(arr[6-10]))
+    //merge(merge(sort(arr[0-2]), sort(arr[3-5])), merge(sort(arr[6-8]), sort(arr[9-10])))
 
 
     //-------------------HELPERS-------------------------

@@ -1,0 +1,26 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf810
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Connie Lei\
+APCS2 pd1\
+HW#07 \'97 Xiang\'92s Troubles\
+2017-02-16\
+\
+2x2 board can have a max of 1 queen because the queen invalidates the horizontal, vertical and diagonal spaces.\
+\
+3x3 board can have a max of 2 queens. Once you place the first queen on the board, there are only two remaining possible places for queens, but both spots are diagonals of each other. Once a diagonal is taken, it invalidates the other diagonal.\
+\
+4x4 board can have a max of 4 queens. I figured this out in class, it was relatively simple. I also noticed three things: the L shape of keeping the queens as close together as possible, the post symmetry, and you cannot have a queen in the corner spots.\
+\
+5x5 board is just an extension of the 4x4 board, with an additional queen in the top left corner or bottom right corner. It can have a max of 5 queens.\
+\
+6x6 board can have a max of 6 queens. I found this out by failing multiple attempts with the 5x5 board, and then just started working on the 4x4 board. There were two approaches I had. One was I used the point symmetry idea and started from there. I knew it couldn\'92t be the any connected piece to the center of the board and so I started it 2 tiles away. I reflected that and then tried placing the next piece, reflecting that and so on. I noticed again I couldn\'92t place a queen on the diagonals from the center because reflecting that wasn\'92t possible. I ended up trying the L close formation. The other approach I had was to widen the 4x4 board by adding two columns in between the center. I ended up shifting things around and it didn\'92t really work because my end one was one column in between and then one added to the end.\
+\
+7x7 board is just an extension of the 6x6 board, with an additional queen in the top left corner or the bottom right corner. It can have a max of 7 queens.\
+\
+8x8 board can have a max of 8 queens. I used the second approach I had from the 6x6 board. I added two columns in the center so it remained symmetric. Then it was fairly simple to place the queens in the only two possible spots remaining. \
+}
