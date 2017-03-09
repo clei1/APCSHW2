@@ -1,0 +1,42 @@
+Connie Lei
+APCS2 pd1
+HW#11 — Probing the Depths…
+2017-03-01
+
+Section Uno:
+Q1: From any starting position, can an open tour always be found? Explain.
+If it is possible to find a solution for the corner starting spot, which has only 2 allowable end points, there are multiple ways to reach it.
+
+Q2: Same, but for closed tour.
+There are less limitations not this, but yes because as long as you cover it. It should always be possible once the board is larger than a 4x4.
+
+Q3: How do you explain the increase in execution time as n increases?
+I believe the execution time is 8^(n^2) or slightly less than that so it is probably O(x^(n^2)) where x is a constant. This is actually a lot less than 8^(n^2) because not every single knight will have 8 spots to go to. Corner ones will have 2, the ones next to the corners will have 3, the ones on the border will have 4, the second layer in will have 6, and only then will the inner most ones have 8. Even then, it will be less because technically, every tile will have 7 options because it will have taken one to get there unless it is the starting point with 8 options.
+
+Q4: Thoughts on optimization?
+I think you could do it in such a way that your next spot will have the least number of possible paths.
+
+Section Deux:
+State your cleanest algo for finding your way out of a maze.
+Once you are given a place to start, from a generated 2D array where the walls/spots you can’t move onto are negative and every other spot is either a 0 or n^2 where n is the length of the array. The 0 will act as a placeable spot whereas n^2 will be the ending spot. You will have a recursive call from the starting spot branching all four directions. If the spot is open mark it down with a counter number, but once it hits a dead end without any spot to go then you will need to go up the branches and set those places with a negative number. Only directions that are on the board and equal to 0 or n^2 will be considered. If the number is positive, then it has already been visited and can be considered a loop. There already exists a path to that part. If the number is n^2, then you can just return the path. 
+
+Pseudocode:
+
+    public boolean road(int x, int y){
+	if(checked[x][y] == 2){
+	    return true;
+	}
+
+	if(checked[x][y] <= 0){
+	    return false;
+	}
+    
+	if(checked[x][y] == 1){
+	    checked[x][y] = 0;
+	    return ( (((x - 1) >= 0) && road(x - 1, y)) ||
+		     (((x + 1) < size) && road(x + 1, y)) ||
+		     (((y - 1) >= 0) && road(x, y - 1)) ||
+		     (((y + 1) < size) && road(x, y + 1)) );
+	}
+	return false;	
+    }
