@@ -124,10 +124,10 @@ public class QuickSort
     //main method for testing
     public static void main( String[] args ) 
     {
-	/*~~~~s~l~i~d~e~~~m~e~~~d~o~w~n~~~~~~~~~~~~~~~~~~~~ (C-k, C-k, C-y) 
+	//~~~~s~l~i~d~e~~~m~e~~~d~o~w~n~~~~~~~~~~~~~~~~~~~~ (C-k, C-k, C-y) 
 
 	//get-it-up-and-running, static test case:
-	int [] arr1 = {7,1,5,12,3};
+	int [] arr1 = {1, 3, 5,7,12};
 	System.out.println("\narr1 init'd to: " );
 	printArr(arr1);
 
