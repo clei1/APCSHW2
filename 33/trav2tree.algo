@@ -1,0 +1,13 @@
+Connie Lei
+APCS2 pd1
+HW#33 -- A Tree Grows in 251
+2017-04-26
+
+Given: preorder inorder
+Find the position of the root from the preorder in the inorder. All the letters on the left side correspond with the left subtree, the letters on the right correspond with the right subtree. The length of the letters in the left subtree are the only ones that will be in the first part of the preorder. All letters after that length will be the right subtree. Repeat the process and apply it to the subtrees until the entire tree is solved.
+
+Given: inorder postorder
+Find the position of the root from the postorder in the inorder. All the letters on the left side correspond with the left subtree, the letters on the right correspond with the right subtree. The length of the letters in the left subtree will determine what the right subtreeâ€™s root is. Repeat the process and apply it to the subtrees until the entire tree is solved.
+
+Given: preorder postorder
+Find the root from either order, then the next letter in preorder will be the root of the left subtree. All letters before that letter in the postorder will be on that subtree. After finding the length of that subtree, the next letter in preorder will be the root for the right subtree. Repeat the process and apply it to the subtrees until the entire tree is solved.
