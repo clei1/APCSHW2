@@ -1,0 +1,32 @@
+[submodule "apcs2-final-proj"]
+	path = apcs2-final-proj
+	url = https://github.com/clei1/apcs2-final-proj
+	branch = master
+[submodule "apcs2-quicksort-analysis"]
+	path = apcs2-quicksort-analysis
+	url = https://github.com/clei1/apcs2-quicksort-analysis
+	branch = master
+[submodule "apcs2-mergesort-analysis"]
+	path = apcs2-mergesort-analysis
+	url = https://github.com/clei1/apcs2-mergesort-analysis
+	branch = master
+[submodule "apcs2-intro-processing-ball"]
+	path = apcs2-intro-processing-ball
+	url = https://github.com/clei1/apcs2-intro-processing-ball
+	branch = master
+[submodule "apcs2-help-desk"]
+	path = apcs2-help-desk
+	url = https://github.com/clei1/apcs2-help-desk
+	branch = master
+[submodule "apcs2-deque-implementation"]
+	path = apcs2-deque-implementation
+	url = https://github.com/clei1/apcs2-deque-implementation
+	branch = master
+[submodule "apcs2-maze"]
+	path = apcs2-maze
+	url = https://github.com/clei1/apcs2-maze
+	branch = master
+[submodule "apcs1-final-tak"]
+	path = apcs1-final-tak
+	url = https://github.com/clei1/apcs1-final-tak
+	branch = master
