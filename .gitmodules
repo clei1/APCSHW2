@@ -26,7 +26,3 @@
 	path = apcs2-maze
 	url = https://github.com/clei1/apcs2-maze
 	branch = master
-[submodule "apcs1-final-tak"]
-	path = apcs1-final-tak
-	url = https://github.com/clei1/apcs1-final-tak
-	branch = master
